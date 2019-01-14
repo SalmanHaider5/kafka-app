@@ -1,0 +1,1 @@
+export const KAFKA_CLIENT_ID = 'TEST_ID'

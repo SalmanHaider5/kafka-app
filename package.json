@@ -19,6 +19,7 @@
   "homepage": "https://github.com/SalmanHaider5/kafka-app#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "kafka-node": "^4.0.0",
     "mysql": "^2.16.0"
   },
   "devDependencies": {

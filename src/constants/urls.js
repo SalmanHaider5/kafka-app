@@ -1,0 +1,1 @@
+export const KAFKA_CLIENT_URL = "http://localhost:2181"
