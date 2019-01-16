@@ -1,5 +1,5 @@
 import mysql from 'mysql'
-import { CREATE_DB_TABLE_QUERY, CREATE_KAFKA_TABLE_QUERY } from './constants'
+import { CREATE_DB_TABLE_QUERY, CREATE_KAFKA_TABLE_QUERY } from '../constants'
 
 const { createConnection } = mysql
 const connection = createConnection({
