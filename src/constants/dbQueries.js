@@ -9,4 +9,5 @@ export const CREATE_KAFKA_TABLE_QUERY = `CREATE TABLE IF NOT EXISTS ${KAFKA_TABL
                                         id int primary key auto_increment,
                                         name varchar(255) not null,
                                         age int 
-                                      )`                   
+                                      )`
+export const GET_KAFKA_RECORDS_QUERY = `SELECT * FROM ${KAFKA_TABLE}`

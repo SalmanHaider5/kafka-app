@@ -2,7 +2,7 @@ import express from 'express'
 import http from 'http'
 import bodyParser from 'body-parser'
 
-import { createTables, postRecordToDatabase } from './database'
+import { createTables, postRecordToDatabase, getDataFromKafkaDBTable } from './database'
 import { postDataToKafka, postDataFromKafka } from './kafka'
 import { DB_TABLE } from './constants'
 
@@ -20,7 +20,11 @@ app.post('/data', (req, res) => {
   postRecordToDatabase(DB_TABLE, body)
   postDataToKafka(body)
   postDataFromKafka()
-  //getDataFromKafkaDBTable()
+  res.send('Data Posted...')
+})
+
+app.get('/data', (req, res) => {
+  getDataFromKafkaDBTable(req, res)
 })
 
 http.createServer(app).listen(PORT, () => {
