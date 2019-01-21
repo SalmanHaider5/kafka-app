@@ -35,9 +35,6 @@ https://kafka.apache.org/downloads
 (App will be running on port 3000)
 
 ## URLs
-- GET - /
-(If you are running it first time, this will create database tables)
-- POST - /data
-(to Post Data on Darabase and Kafka Server)
-- GET - /data
-(to retrieve data from server)
+- GET - / -->(If you are running it first time, this will create database tables)
+- POST - /data --> (to Post Data on Darabase and Kafka Server)
+- GET - /data --> (to retrieve data from server)
